@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Gallery - Bright Web Academy</title> 
+<meta name="description" content="View sample screenshots and project 
+previews built in the Bright Web Academy HTML course."> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style> 
+body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; } 
+header, nav, main, footer { padding: 15px; } 
+header { background: #004b8d; color: white; } 
+nav { background: #eee; } 
+nav a { margin-right: 10px; text-decoration: none; color: #004b8d; 
+font-weight: bold; } 
+nav a.active { text-decoration: underline; } 
+.container { max-width: 900px; margin: 0 auto; } 
+.gallery { display: flex; flex-wrap: wrap; gap: 15px; } 
+figure { margin: 0; border: 1px solid #ddd; padding: 8px; border-radius: 5px; 
+background: white; flex: 1 1 250px; } 
+figure img { max-width: 100%; height: auto; display: block; } 
+figcaption { font-size: 0.9em; padding-top: 5px; } 
+footer { background: #004b8d; color: white; text-align: center; margin-top: 
+20px; } 
+@media (max-width: 600px) { 
+.gallery { flex-direction: column; } 
+} 
+</style> 
+</head> 
+<body> 
+<header> 
+<div class="container"> 
+<h1>Project Gallery</h1> 
+<p>Preview of Sample Projects Built in the Course</p> 
+</div> 
+</header> 
+<nav aria-label="Main navigation"> 
+<div class="container"> 
+<a href="index.html">Home</a> 
+<a href="about.html">About</a> 
+<a href="services.html">Courses</a> 
+<a href="gallery.html" class="active">Gallery</a> 
+<a href="contact.html">Contact</a> 
+</div> 
+</nav> 
+<main class="container"> 
+<section> 
+<h2>Sample Screenshots</h2> 
+<p>All images below are examples of mini projects like portfolio pages, 
+menus, and forms. (Use your own images in actual project.)</p> 
+</section> 
+<section class="gallery" aria-label="Gallery of project screenshots"> 
+<figure> 
+<img src="portfolio-sample.jpg" loading="lazy" alt="Screenshot of a 
+student portfolio homepage"> 
+<figcaption>Personal Portfolio Homepage</figcaption> 
+</figure> 
+<figure> 
+<img src="menu-sample.jpg" loading="lazy" alt="Screenshot of a 
+restaurant menu layout"> 
+<figcaption>Restaurant Menu Layout</figcaption> 
+</figure> 
+<figure> 
+<img src="form-sample.jpg" loading="lazy" alt="Screenshot of a contact 
+and registration form"> 
+<figcaption>Contact &amp; Registration Form</figcaption> 
+</figure> 
+</section> 
+<section> 
+<h2>HTML Entities Example</h2> 
+<p>We also use HTML entities in text, like &copy; &reg; &trade; and 
+arrows &rarr; &larr;.</p> 
+</section> 
+</main> 
+<footer> 
+<p>&copy; 2025 Bright Web Academy · Practice Makes Progress.</p> 
+</footer> 
+</body> 
+</html>
